@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { Header } from "./layout/header/Header";
 import { Main } from "./layout/sections/main/Main";
 import { Skills } from "./layout/sections/main/skills/Skills";
-import { Works } from "./layout/sections/works/Works";
+import { Works } from "./layout/sections/main/works/Works";
+import { Testimony } from "./layout/sections/main/testimony/Testimony";
 
 export function App() {
   return (
@@ -12,6 +13,7 @@ export function App() {
       <Main />
       <Skills />
       <Works />
+      <Testimony />
     </div>
   );
 }

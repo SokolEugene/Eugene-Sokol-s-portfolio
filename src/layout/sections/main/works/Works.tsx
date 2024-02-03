@@ -1,12 +1,13 @@
 import React from "react";
 import { styled } from "styled-components";
-import { SectionTitle } from "../../../components/SectionTitle";
-import { Menu } from "../../../components/menu/Menu";
-import { Wrapper } from "../../../components/Wrapper";
+
+import todolist from "../../../../assets/images/todolist.jpg";
+import counter from "../../../../assets/images/counter.jpg";
+import socialnetwork from "../../../../assets/images/socialnetwork.jpg";
+import { SectionTitle } from "../../../../components/SectionTitle";
+import { Menu } from "../../../../components/menu/Menu";
+import { Wrapper } from "../../../../components/Wrapper";
 import { Work } from "./work/Work";
-import todolist from "../../../assets/images/todolist.jpg";
-import counter from "../../../assets/images/counter.jpg";
-import socialnetwork from "../../../assets/images/socialnetwork.jpg";
 
 const worksItems = ["Social network", "todolist", "counter"];
 
