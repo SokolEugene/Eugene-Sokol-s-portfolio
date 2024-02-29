@@ -24,16 +24,9 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
   background-color: ${theme.colors.accent};
-  //background-color: #f7dc4f;
-  // display: flex;
-  //  justify-content: space-between;
-
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
-  //width: 100%;
-
-  // padding: 20px;
 `;

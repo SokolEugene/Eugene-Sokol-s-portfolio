@@ -10,16 +10,36 @@ type SkillPropsType = {
 export const Skill = (props: SkillPropsType) => {
   return (
     <StyledSkill>
-      <Icon iconId={props.iconId} />
+      <IconBox>
+        <Icon iconId={props.iconId} />
+      </IconBox>
       <SkillTitle>{props.title}</SkillTitle>
     </StyledSkill>
   );
 };
 
 const StyledSkill = styled.div`
-  width: 33%;
-  margin: 10px;
-  background-color: #d2f2c1;
+  display: flex;
+  flex-direction: column;
+  width: 125px;
+  height: 150px;
+  outline: 1px solid red;
+  color: black;
 `;
-
-const SkillTitle = styled.div``;
+const IconBox = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 125px;
+  outline: 1px solid green;
+`;
+const SkillTitle = styled.div`
+  color: #015761;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+`;

@@ -3,26 +3,40 @@ import { styled } from "styled-components";
 import { Wrapper } from "../../../../components/Wrapper";
 import { SectionTitle } from "../../../../components/SectionTitle";
 import { Skill } from "./skill/Skill";
+import { Container } from "../../../../components/container";
+import { SectionDescription } from "../../../../components/SectionDescription";
 
 export const Skills = () => {
   return (
     <StyledSkills>
-      <SectionTitle>My Skills</SectionTitle>
-      <Wrapper justify="space-around" wrap="wrap">
-        <Skill iconId="html" title="HTML" />
-        <Skill iconId="css" title="CSS" />
-        <Skill iconId="js" title="JS" />
-        <Skill iconId="vscode" title="VSCode" />
-        <Skill iconId="react" title="React" />
-        <Skill iconId="redux" title="Redux.js" />
-        <Skill iconId="git" title="GIT" />
-        <Skill iconId="github" title="GitHub" />
-      </Wrapper>
+      <Container>
+        <SectionTitle>My Tech Stack</SectionTitle>
+        <SectionDescription>
+          Technologies I’ve been working with recently
+        </SectionDescription>
+        <Wrapper
+          justify="space-around"
+          flexWrap="wrap"
+          gap="50px 100px"
+          maxWidth="1200px"
+        >
+          <Skill iconId="html" title="HTML" />
+          <Skill iconId="css" title="CSS" />
+          <Skill iconId="js" title="JS" />
+          <Skill iconId="vscode" title="VSCode" />
+          <Skill iconId="react" title="React" />
+          <Skill iconId="redux" title="Redux.js" />
+          <Skill iconId="git" title="GIT" />
+          <Skill iconId="github" title="GitHub" />
+        </Wrapper>
+      </Container>
     </StyledSkills>
   );
 };
 
 const StyledSkills = styled.section`
-  background-color: #ededb0;
-  min-height: 100vh;
+  width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  outline: 1px solid red;
 `;
