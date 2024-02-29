@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
 export const SectionTitle = styled.h2`
-  color: green;
+  color: #015761;
   text-align: center;
 `;

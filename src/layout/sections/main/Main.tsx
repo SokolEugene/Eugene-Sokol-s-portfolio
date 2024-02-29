@@ -2,35 +2,81 @@ import React from "react";
 import photo from "../../../assets/images/photo.jpg";
 import { styled } from "styled-components";
 import { Wrapper } from "../../../components/Wrapper";
+import { Container } from "../../../components/container";
+import { theme } from "../../../styles/Theme";
 export const Main = () => {
   return (
     <StyledMain>
-      <Wrapper align="center" justify="space-around">
-        <StyledTextBox>
-          <MainTitle>Hi👋, I’m a software developer</MainTitle>
-          <Caption>
-            I’m Eugene Sokol, a developer dedicated to making the world a better
-            place one line of code at a time.
-          </Caption>
-        </StyledTextBox>
-        <StyledPhoto src={photo} />
-      </Wrapper>
+      <Container>
+        <Wrapper justify="space-between">
+          <TextWrapper>
+            <StyledTextBox>
+              <SmallText>Hey, I’m</SmallText>
+              <Name>
+                Eugene <br /> Sokol
+              </Name>
+              <MainTitle>a software developer</MainTitle>
+            </StyledTextBox>
+          </TextWrapper>
+
+          <PhotoWrapper>
+            <StyledPhoto src={photo} />
+          </PhotoWrapper>
+        </Wrapper>
+      </Container>
     </StyledMain>
   );
 };
 
-const StyledPhoto = styled.img`
-  height: 390px;
-  width: 343px;
-  object-fit: cover;
-`;
-
 const StyledMain = styled.div`
+  background-color: ${theme.colors.accent};
+  display: flex;
   min-height: 100vh;
-  background-color: #d2f2c1;
+  padding-top: 70px;
+  overflow-y: auto;
 `;
 
-const StyledTextBox = styled.div``;
+const TextWrapper = styled.div`
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+`;
 
-const MainTitle = styled.span``;
-const Caption = styled.span``;
+const PhotoWrapper = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+const StyledTextBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+`;
+const StyledPhoto = styled.img`
+  max-height: 1034px;
+  max-width: 850px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+`;
+
+const SmallText = styled.h2`
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 35px;
+  color: ${theme.colors.fontAccent};
+`;
+
+const Name = styled.h2`
+  font-weight: 600;
+  font-size: 127px;
+  letter-spacing: 0.05em;
+`;
+const MainTitle = styled.h1`
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 35px;
+`;

@@ -9,12 +9,14 @@ export const Skills = () => {
     <StyledSkills>
       <SectionTitle>My Skills</SectionTitle>
       <Wrapper justify="space-around" wrap="wrap">
-        <Skill iconId="falcon" title="HTML" />
-        <Skill iconId="falcon" title="CSS" />
-        <Skill iconId="falcon" title="React" />
-        <Skill iconId="falcon" title="JS" />
-        <Skill iconId="falcon" title="TS" />
-        <Skill iconId="falcon" title="TS" />
+        <Skill iconId="html" title="HTML" />
+        <Skill iconId="css" title="CSS" />
+        <Skill iconId="js" title="JS" />
+        <Skill iconId="vscode" title="VSCode" />
+        <Skill iconId="react" title="React" />
+        <Skill iconId="redux" title="Redux.js" />
+        <Skill iconId="git" title="GIT" />
+        <Skill iconId="github" title="GitHub" />
       </Wrapper>
     </StyledSkills>
   );
