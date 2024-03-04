@@ -35,7 +35,7 @@ const IconBox = styled.div`
   height: 125px;
   outline: 1px solid green;
 `;
-const SkillTitle = styled.div`
+const SkillTitle = styled.h3`
   color: #015761;
   font-family: Poppins;
   font-size: 16px;

@@ -75,7 +75,7 @@ const Name = styled.h2`
   font-size: 127px;
   letter-spacing: 0.05em;
 `;
-const MainTitle = styled.h1`
+const MainTitle = styled.p`
   font-weight: 400;
   font-size: 27px;
   line-height: 35px;
