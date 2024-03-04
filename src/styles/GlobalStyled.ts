@@ -44,4 +44,24 @@ background-color: ${theme.colors.primaryBG};
 section: nth-of-type(odd) {
 background-color: ${theme.colors.secondaryBG};
 }
+
+h3 {
+	color: #015761;
+	font-family: Poppins;
+font-size: 28px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: center;
+}
+
+p {
+	color: #015761;
+font-family: Poppins;
+font-size: 18px;
+font-weight: 300;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+}
 `

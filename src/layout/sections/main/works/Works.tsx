@@ -5,31 +5,39 @@ import todolist from "../../../../assets/images/todolist.jpg";
 import counter from "../../../../assets/images/counter.jpg";
 import socialnetwork from "../../../../assets/images/socialnetwork.jpg";
 import { SectionTitle } from "../../../../components/SectionTitle";
-import { Menu } from "../../../../components/menu/Menu";
 import { Wrapper } from "../../../../components/Wrapper";
 import { Work } from "./work/Work";
+import { Container } from "../../../../components/container";
+import { SectionDescription } from "../../../../components/SectionDescription";
 
 const worksItems = ["Social network", "todolist", "counter"];
 
 export const Works = () => {
   return (
     <StyledWorks>
-      <SectionTitle>My projects</SectionTitle>
-      <Menu items={worksItems} />
-      <Wrapper justify="space-around">
-        <Work
-          title="Social network"
-          ImgPath={socialnetwork}
-          text="Lorem ipsum"
-        ></Work>
-        <Work title="To do List" ImgPath={todolist} text="Lorem ipsum"></Work>
-        <Work title="Counter" ImgPath={counter} text="Lorem ipsum"></Work>
-      </Wrapper>
+      <Container>
+        <SectionTitle>My projects</SectionTitle>
+        <SectionDescription>Things I’ve built so far</SectionDescription>
+        <Wrapper justify="space-between">
+          <Work
+            title="Social network"
+            ImgPath={socialnetwork}
+            text="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
+          ></Work>
+          <Work
+            title="To do List"
+            ImgPath={todolist}
+            text="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
+          ></Work>
+          <Work
+            title="Counter"
+            ImgPath={counter}
+            text="This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content"
+          ></Work>
+        </Wrapper>
+      </Container>
     </StyledWorks>
   );
 };
 
-const StyledWorks = styled.div`
-  min-height: 100vh;
-  background-color: #d2f2c1;
-`;
+const StyledWorks = styled.section``;
