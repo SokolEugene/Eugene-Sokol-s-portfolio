@@ -5,19 +5,16 @@ import { Icon } from "../../../../components/icon/Icon";
 import { Slider } from "./slider/Slider";
 import { Wrapper } from "../../../../components/Wrapper";
 
-export const Testimony = () => {
+export const AboutMe = () => {
   return (
-    <StyledTestimony>
-      <SectionTitle>Testimony</SectionTitle>
+    <StyledAboutMe>
+      <SectionTitle>About me</SectionTitle>
       <Wrapper align="center" direction="column">
         <Icon iconId="quote" />
         <Slider />
       </Wrapper>
-    </StyledTestimony>
+    </StyledAboutMe>
   );
 };
 
-const StyledTestimony = styled.section`
-  min-height: 60vh;
-  background-color: #ededb0;
-`;
+const StyledAboutMe = styled.section``;

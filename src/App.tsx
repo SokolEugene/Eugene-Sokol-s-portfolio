@@ -4,7 +4,7 @@ import { Header } from "./layout/header/Header";
 import { Main } from "./layout/sections/main/Main";
 import { Skills } from "./layout/sections/main/skills/Skills";
 import { Works } from "./layout/sections/main/works/Works";
-import { Testimony } from "./layout/sections/main/testimony/Testimony";
+import { AboutMe } from "./layout/sections/main/testimony/AboutMe";
 import { Contacts } from "./layout/sections/main/contacts/Contacts";
 import { Footer } from "./layout/Footer/Footer";
 
@@ -15,7 +15,7 @@ export function App() {
       <Main />
       <Skills />
       <Works />
-      <Testimony />
+      <AboutMe />
       <Contacts />
       <Footer />
     </div>
