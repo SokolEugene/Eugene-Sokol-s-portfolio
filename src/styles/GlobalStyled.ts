@@ -31,7 +31,9 @@ ul {
 
 button {
 	background-color: unset;
-	border: none
+	border: none;
+	cursor: pointer;
+	color: ${theme.colors.fontAccent}
 }
 
 section {

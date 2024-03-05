@@ -15,7 +15,7 @@ export const Icon = (props: IconPropsType) => {
       fill={props.fill || "#000000"}
       width={props.width || "120px"}
       height={props.height || "120px"}
-      //viewBox={props.viewBox || "0 50 50"}
+      viewBox={props.viewBox || "0 50 50"}
       role="img"
       xmlns="http://www.w3.org/2000/svg"
     >

@@ -18,7 +18,7 @@ export const Works = () => {
       <Container>
         <SectionTitle>My projects</SectionTitle>
         <SectionDescription>Things I’ve built so far</SectionDescription>
-        <Wrapper justify="space-between">
+        <Wrapper justify="space-between" align="flex-start">
           <Work
             title="Social network"
             ImgPath={socialnetwork}
