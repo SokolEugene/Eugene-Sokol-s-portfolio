@@ -4,30 +4,32 @@ import { SectionTitle } from "../../../../components/SectionTitle";
 import { ContactCard, ContactInfo } from "./contact/ContactCard";
 import { SuperBtn } from "../../../../components/SuperBtn";
 import { Wrapper } from "../../../../components/Wrapper";
+import { Container } from "../../../../components/container";
 
 export const Contacts = () => {
   return (
     <StyledContacts>
-      <SectionTitle>Contact me</SectionTitle>
-      <Wrapper justify="space-around">
-        <StyledForm>
-          <Field placeholder={"name"} />
-          <Field placeholder={"subject"} />
-          <Field placeholder={"message"} as={"textarea"} />
-          <SuperBtn type={"submit"}>Send</SuperBtn>
-        </StyledForm>
-        <ContactInfo>
-          <ContactCard />
-          <ContactCard />
-          <ContactCard />
-        </ContactInfo>
-      </Wrapper>
+      <Container>
+        <SectionTitle>Contact me</SectionTitle>
+        <Wrapper>
+          <StyledForm>
+            <Field placeholder={"name"} />
+            <Field placeholder={"subject"} />
+            <Field placeholder={"message"} as={"textarea"} />
+            <SuperBtn type={"submit"}>Send</SuperBtn>
+          </StyledForm>
+          <ContactInfo>
+            <ContactCard />
+            <ContactCard />
+            <ContactCard />
+          </ContactInfo>
+        </Wrapper>
+      </Container>
     </StyledContacts>
   );
 };
 
 const StyledContacts = styled.section`
-  min-height: 60vh;
   background-color: #de7171;
 `;
 

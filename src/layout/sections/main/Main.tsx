@@ -55,10 +55,8 @@ const StyledTextBox = styled.div`
   text-align: left;
 `;
 const StyledPhoto = styled.img`
-  max-height: 1034px;
-  max-width: 850px;
-  width: 100%;
-  height: 100%;
+  max-height: 811px;
+  max-width: auto;
   object-fit: cover;
   border-radius: 10px;
 `;
