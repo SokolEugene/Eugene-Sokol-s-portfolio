@@ -40,10 +40,10 @@ section {
 	padding: 200px 0
 }
 
-section: nth-of-type(even) {
+section: nth-of-type(odd) {
 background-color: ${theme.colors.primaryBG};
 }
-section: nth-of-type(odd) {
+section: nth-of-type(even) {
 background-color: ${theme.colors.secondaryBG};
 }
 
@@ -66,4 +66,8 @@ line-height: 26px;
 letter-spacing: 0px;
 text-align: left;
 }
+&:focus-visible {
+      outline: 1px solid ${theme.colors.fontAccent};
+    }	
+
 `

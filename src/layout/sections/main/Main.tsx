@@ -74,6 +74,7 @@ const Name = styled.h2`
   letter-spacing: 0.05em;
 `;
 const MainTitle = styled.p`
+  color: ${theme.colors.fontMain};
   font-weight: 400;
   font-size: 27px;
   line-height: 35px;

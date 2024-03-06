@@ -54,6 +54,7 @@ const PhotoWrapper = styled.div`
   &:hover {
     &::before {
       content: "";
+      border-radius: 20px 20px 0 0;
       position: absolute;
       left: 0;
       right: 0;
