@@ -7,33 +7,30 @@ import { theme } from "../../../styles/Theme";
 export const Main = () => {
   return (
     <StyledMain>
-      <Container>
-        <Wrapper justify="space-between">
-          <TextWrapper>
-            <StyledTextBox>
-              <SmallText>Hey, I’m</SmallText>
-              <Name>
-                Eugene <br /> Sokol
-              </Name>
-              <MainTitle>a software developer</MainTitle>
-            </StyledTextBox>
-          </TextWrapper>
-
-          <PhotoWrapper>
-            <StyledPhoto src={photo} />
-          </PhotoWrapper>
-        </Wrapper>
-      </Container>
+      <TextWrapper>
+        <StyledTextBox>
+          <SmallText>Hey, I’m</SmallText>
+          <Name>
+            Eugene <br /> Sokol
+          </Name>
+          <MainTitle>a software developer</MainTitle>
+        </StyledTextBox>
+      </TextWrapper>
+      {/* <PhotoWrapper2> */}
+      <PhotoWrapper>
+        <StyledPhoto src={photo} />
+      </PhotoWrapper>
+      {/* </PhotoWrapper2> */}
     </StyledMain>
   );
 };
 
 const StyledMain = styled.div`
-  background-color: ${theme.colors.accent};
+  background-color: #015761;
   display: flex;
-  min-height: 100vh;
-  padding-top: 70px;
-  overflow-y: auto;
+  min-height: calc(100vh - 70px);
+  margin-top: 70px;
+  overflow-y: hidden;
 `;
 
 const TextWrapper = styled.div`
@@ -44,21 +41,31 @@ const TextWrapper = styled.div`
 `;
 
 const PhotoWrapper = styled.div`
-  flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex: 1;
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+  position: relative;
+`;
+const StyledPhoto = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* //max-height: 811px;
+  // max-width: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; */
 `;
 const StyledTextBox = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-`;
-const StyledPhoto = styled.img`
-  max-height: 811px;
-  max-width: auto;
-  object-fit: cover;
-  border-radius: 10px;
+  justify-content: center;
 `;
 
 const SmallText = styled.h2`
@@ -79,3 +86,5 @@ const MainTitle = styled.p`
   font-size: 27px;
   line-height: 35px;
 `;
+
+// const PhotoWrapper2 = styled.div``;

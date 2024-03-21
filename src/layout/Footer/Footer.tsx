@@ -12,26 +12,50 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <Container>
-        <Wrapper align="center" direction="column">
+        <Wrapper align="center" direction="column" gap="5px">
           <Name>Eugene Sokol</Name>
           <SocialList>
             <SocialItem>
               <SocialLink>
-                <Icon iconId="gitIcon" height="50px" width="50px" />
+                <IconBox>
+                  <Icon
+                    iconId="footerGithub"
+                    height="35px"
+                    width="35px"
+                    fill="#015761"
+                    viewBox="-5 -3 25 25"
+                  />
+                </IconBox>
               </SocialLink>
             </SocialItem>
             <SocialItem>
               <SocialLink>
-                <Icon iconId="gitIcon" height="50px" width="50px" />
+                <IconBox>
+                  <Icon
+                    iconId="footerTelegram"
+                    height="30px"
+                    width="30px"
+                    fill="#015761"
+                    viewBox="3 -1 21 25"
+                  />
+                </IconBox>
               </SocialLink>
             </SocialItem>
             <SocialItem>
               <SocialLink>
-                <Icon iconId="gitIcon" height="50px" width="50px" />
+                <IconBox>
+                  <Icon
+                    iconId="footerLinkedin"
+                    height="35px"
+                    width="35px"
+                    fill="#015761"
+                    viewBox="-2 -1 24 24"
+                  />
+                </IconBox>
               </SocialLink>
             </SocialItem>
           </SocialList>
-          <Menu items={footerItems} />
+
           <Copyright>
             Designed and built by Eugene Sokol with Love & Coffee
           </Copyright>
@@ -51,13 +75,24 @@ const Name = styled.span``;
 
 const SocialList = styled.ul`
   display: flex;
+  gap: 15px;
 `;
 
 const SocialItem = styled.li`
-  border: 1px solid;
+  //outline: red 1px solid;
 `;
 
 const SocialLink = styled.a``;
+
+const IconBox = styled.div`
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: ${theme.colors.fontAccent};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const Copyright = styled.small`
   color: ${theme.colors.fontMain};

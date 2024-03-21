@@ -19,7 +19,7 @@ export const Skills = () => {
           justify="space-around"
           flexWrap="wrap"
           gap="50px 100px"
-          maxWidth="1200px"
+          height="100%"
         >
           <Skill iconId="html" title="HTML" />
           <Skill iconId="css" title="CSS" />
@@ -36,8 +36,8 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  width: 100%;
-  max-height: 100%;
+  //width: 100%;
+  //height: 100%;
   margin: 0 auto;
   outline: 1px solid red;
 `;

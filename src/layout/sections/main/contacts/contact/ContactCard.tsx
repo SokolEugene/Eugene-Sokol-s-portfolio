@@ -7,16 +7,32 @@ type InfoItem = {
   question: string;
   answer: string;
 };
+type InfoIcon = {
+  id: string;
+  height: string;
+  width: string;
+  fill: string;
+  viewBox: string;
+};
 
 type contactCardPropsType = {
   info: InfoItem[];
+  icon: InfoIcon[];
 };
 
 export const ContactCard = (props: contactCardPropsType) => {
   return (
     <StyledContactCard>
       <IconBox>
-        <Icon iconId="" />
+        {props.icon.map((item, index) => (
+          <Icon
+            iconId={item.id}
+            fill={item.fill}
+            height={item.height}
+            width={item.width}
+            viewBox={item.viewBox}
+          />
+        ))}
       </IconBox>
       <TextBox>
         {props.info.map((item, index) => (
@@ -36,14 +52,14 @@ const StyledContactCard = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  //outline: red 1px solid;
+  outline: red 1px solid;
   background-color: ${theme.colors.primaryBG};
   padding: 25px;
 `;
 
 const IconBox = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: ${theme.colors.fontAccent};
   display: flex;
@@ -65,7 +81,7 @@ export const ContactInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  // outline: red 1px solid;
+  outline: red 1px solid;
   margin: 0 auto;
 `;
 

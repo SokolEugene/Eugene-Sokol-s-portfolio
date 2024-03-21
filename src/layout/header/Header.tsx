@@ -23,6 +23,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
+  height: 70px;
   background-color: ${theme.colors.accent};
   position: fixed;
   top: 0;

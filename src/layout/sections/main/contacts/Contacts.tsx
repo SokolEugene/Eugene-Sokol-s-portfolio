@@ -25,6 +25,34 @@ const contactInfoGroup3 = [
   { question: "Language:", answer: "English, Russian" },
 ];
 
+const iconIdGroup1 = [
+  {
+    id: "contactAt",
+    height: "35px",
+    width: "35px",
+    fill: "#015761",
+    viewBox: "-4 -4 24 24",
+  },
+];
+
+const iconIdGroup2 = [
+  {
+    id: "contactShare",
+    height: "30px",
+    width: "30px",
+    fill: "#015761",
+    viewBox: "1 -1 25 25",
+  },
+];
+const iconIdGroup3 = [
+  {
+    id: "contactWorld",
+    height: "35px",
+    width: "35px",
+    fill: "#015761",
+    viewBox: "-4 -3 25 25",
+  },
+];
 export const Contacts = () => {
   return (
     <StyledContacts>
@@ -43,9 +71,9 @@ export const Contacts = () => {
             <SuperBtn type={"submit"}>Send</SuperBtn>
           </StyledForm>
           <ContactInfo>
-            <ContactCard info={contactInfoGroup1} />
-            <ContactCard info={contactInfoGroup2} />
-            <ContactCard info={contactInfoGroup3} />
+            <ContactCard info={contactInfoGroup1} icon={iconIdGroup1} />
+            <ContactCard info={contactInfoGroup2} icon={iconIdGroup2} />
+            <ContactCard info={contactInfoGroup3} icon={iconIdGroup3} />
           </ContactInfo>
         </Wrapper>
       </Container>
